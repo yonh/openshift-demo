@@ -20,7 +20,7 @@ RUN chmod +x /opt/utils/start.sh
 ADD composer /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
 
-RUN deluser apache && addgroup apache && adduser -S apache -G apache -u 1000
+# RUN deluser apache && addgroup apache && adduser -S apache -G apache -u 1000
 
 ADD app /app
 ENV WEBAPP_ROOT public
