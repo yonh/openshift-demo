@@ -23,8 +23,8 @@ RUN chmod +x /usr/local/bin/composer
 
 # RUN deluser apache && addgroup apache && adduser -S apache -G apache -u 1000
 
-ADD app /app
-ADD run.sh /
+#ADD app /app
+#ADD run.sh /
 ENV WEBAPP_ROOT public
 
 EXPOSE 80
